@@ -1,64 +1,64 @@
 #Functions
-def insert_name(default_name):
+def insert_name(default_name, list):
 
     ans = input("Enter name of " + default_name + ": ")
 
     if ans == "":
-        return default_name
+        list.append(default_name)
     else:
-        return ans
+        list.append(ans)
 
-
+name = []
 rotation = ["no rotation selected :P"]
 action = ""
 
 # Setting Up Rotation Cycle
 r_number = input("Insert # of players (3 to 8)\n")
 if r_number == "3":
-    p1 = insert_name("P1")
-    p2 = insert_name("P2")
-    p3 = insert_name("P3")
-    rotation = [p1 + " vs " + p2, p2 + " vs " + p3, p3 + " vs " + p1]
+    insert_name("P1", name)
+    insert_name("P2", name)
+    insert_name("P3", name)
+    rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[0]]
 elif r_number == "4":
-    p1 = insert_name("P1")
-    p2 = insert_name("P2")
-    p3 = insert_name("P3")
-    p4 = insert_name("P4")
-    rotation = [p1 + " vs " + p2, p2 + " vs " + p3, p3 + " vs " + p4, p4 + " vs " + p1, p1 + " vs " + p3, p2 + " vs " + p4]
+    insert_name("P1", name)
+    insert_name("P2", name)
+    insert_name("P3", name)
+    insert_name("P4", name)
+    rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[0], name[0] + " vs " + name[2], name[1] + " vs " + name[3]]
 elif r_number == "5":
-    p1 = insert_name("P1")
-    p2 = insert_name("P2")
-    p3 = insert_name("P3")
-    p4 = insert_name("P4")
-    p5 = insert_name("P5")
-    rotation = [p1 + " vs " + p2, p2 + " vs " + p3, p3 + " vs " + p4, p4 + " vs " + p5, p5 + " vs " + p1, p1 + " vs " + p3, p3 + " vs " + p5, p5 + " vs " + p2, p2 + " vs " + p4, p4 + " vs " + p1]
+    insert_name("P1", name)
+    insert_name("P2", name)
+    insert_name("P3", name)
+    insert_name("P4", name)
+    insert_name("P5", name)
+    rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[0], name[0] + " vs " + name[2], name[2] + " vs " + name[4], name[4] + " vs " + name[1], name[1] + " vs " + name[3], name[3] + " vs " + name[0]]
 elif r_number == "6":
-    p1 = insert_name("P1")
-    p2 = insert_name("P2")
-    p3 = insert_name("P3")
-    p4 = insert_name("P4")
-    p5 = insert_name("P5")
-    p6 = insert_name("P6")
-    rotation = [p1 + " vs " + p2, p2 + " vs " + p3, p3 + " vs " + p4, p4 + " vs " + p5, p5 + " vs " + p6, p6 + " vs " + p1, p1 + " vs " + p3, p3 + " vs " + p5, p5 + " vs " + p1, p2 + " vs " + p4, p4 + " vs " + p6, p6 + " vs " + p2, p1 + " vs " + p4, p2 + " vs " + p5, p3 + " vs " + p6]
+    insert_name("P1", name)
+    insert_name("P2", name)
+    insert_name("P3", name)
+    insert_name("P4", name)
+    insert_name("P5", name)
+    insert_name("P6", name)
+    rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[2], name[2] + " vs " + name[4], name[4] + " vs " + name[0], name[1] + " vs " + name[3], name[3] + " vs " + name[5], name[5] + " vs " + name[1], name[0] + " vs " + name[3], name[1] + " vs " + name[4], name[2] + " vs " + name[5]]
 elif r_number == "7":
-    p1 = insert_name("P1")
-    p2 = insert_name("P2")
-    p3 = insert_name("P3")
-    p4 = insert_name("P4")
-    p5 = insert_name("P5")
-    p6 = insert_name("P6")
-    p7 = insert_name("P7")
-    rotation = [p1 + " vs " + p2, p2 + " vs " + p3, p3 + " vs " + p4, p4 + " vs " + p5, p5 + " vs " + p6, p6 + " vs " + p7, p7 + " vs " + p1, p1 + " vs " + p3, p3 + " vs " + p5, p5 + " vs " + p7, p7 + " vs " + p2, p2 + " vs " + p4, p4 + " vs " + p6, p6 + " vs " + p1, p1 + " vs " + p4, p4 + " vs " + p7, p7 + " vs " + p3, p3 + " vs " + p6, p6 + " vs " + p2, p2 + " vs " + p5, p5 + " vs " + p1]   
+    insert_name("P1", name)
+    insert_name("P2", name)
+    insert_name("P3", name)
+    insert_name("P4", name)
+    insert_name("P5", name)
+    insert_name("P6", name)
+    insert_name("P7", name)
+    rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[6], name[6] + " vs " + name[0], name[0] + " vs " + name[2], name[2] + " vs " + name[4], name[4] + " vs " + name[6], name[6] + " vs " + name[1], name[1] + " vs " + name[3], name[3] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[3], name[3] + " vs " + name[6], name[6] + " vs " + name[2], name[2] + " vs " + name[5], name[5] + " vs " + name[1], name[1] + " vs " + name[4], name[4] + " vs " + name[0]]   
 elif r_number == "8":
-    p1 = insert_name("P1")
-    p2 = insert_name("P2")
-    p3 = insert_name("P3")
-    p4 = insert_name("P4")
-    p5 = insert_name("P5")
-    p6 = insert_name("P6")
-    p7 = insert_name("P7")
-    p8 = insert_name("P8")
-    rotation = [p1 + " vs " + p2, p2 + " vs " + p3, p3 + " vs " + p4, p4 + " vs " + p5, p5 + " vs " + p6, p6 + " vs " + p7, p7 + " vs " + p8, p8 + " vs " + p1, p1 + " vs " + p3, p3 + " vs " + p5, p5 + " vs " + p7, p7 + " vs " + p1, p2 + " vs " + p4, p4 + " vs " + p6, p6 + " vs " + p8, p8 + " vs " + p2, p1 + " vs " + p4, p4 + " vs " + p7, p7 + " vs " + p2, p2 + " vs " + p5, p5 + " vs " + p8, p8 + " vs " + p3, p3 + " vs " + p6, p6 + " vs " + p1, p1 + " vs " + p5, p2 + " vs " + p6, p3 + " vs " + p7, p4 + " vs " + p8]
+    insert_name("P1", name)
+    insert_name("P2", name)
+    insert_name("P3", name)
+    insert_name("P4", name)
+    insert_name("P5", name)
+    insert_name("P6", name)
+    insert_name("P7", name)
+    insert_name("P8", name)        
+    rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[6], name[6] + " vs " + name[7], name[7] + " vs " + name[0], name[0] + " vs " + name[2], name[2] + " vs " + name[4], name[4] + " vs " + name[6], name[6] + " vs " + name[0], name[1] + " vs " + name[3], name[3] + " vs " + name[5], name[5] + " vs " + name[7], name[7] + " vs " + name[1], name[0] + " vs " + name[3], name[3] + " vs " + name[6], name[6] + " vs " + name[1], name[1] + " vs " + name[4], name[4] + " vs " + name[7], name[7] + " vs " + name[2], name[2] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[4], name[1] + " vs " + name[5], name[2] + " vs " + name[6], name[3] + " vs " + name[7]]
 else:
     print("erm no :3c")
     action = "q"
