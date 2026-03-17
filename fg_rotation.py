@@ -66,17 +66,17 @@ else:
 
 # The Actual Rotation Function
 i = int(0)
-print("\nCurrent round: " + rotation[i] + "\n")
+print("\nRound " + str(i+1) + ": " + rotation[i] + "\n")
 while action != "q":
     action = input("Enter nothing or n for next round, p for previous round, q to quit and anything else to display current round\n")
     if action == "n" or action == "":
         i = (i+1) % len(rotation)
-        print("\nCurrent round: " + rotation[i] + "\n")
+        print("\nRound " + str(i+1) + ": " + rotation[i] + "\n")
     elif action == "p":
         i = (i-1) % len(rotation)
-        print("\nCurrent round: " + rotation[i] + "\n")
+        print("\nRound " + str(i+1) + ": " + rotation[i] + "\n")
     elif action == "q":
         print("\nThanks for using this tool!")
     else:
-        print("\nCurrent round: " + rotation[i] + "\n")
+        print("\nRound " + str(i+1) + ": " + rotation[i] + "\n")
     
