@@ -1,13 +1,13 @@
 # fighting-game-rotation
-Fighting Game Rotation Visualizer
+###Fighting Game Rotation Visualizer
 
-Features:
+**Features:**
 
   Rotates Among 3 to 8 players
 
   Input names/tags for player slots
 
-In Development:
+**In Development:**
 
   Adding/Dropping players mid rotation
 
@@ -15,4 +15,4 @@ In Development:
 
   Visual graph representation of rotation
 
-For more about the rotations themselves: https://plant-enjoyer.neocities.org/fighting-game-rotations
+###For more about the rotations themselves: https://plant-enjoyer.neocities.org/fighting-game-rotations
