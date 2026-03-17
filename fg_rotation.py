@@ -1,4 +1,3 @@
-#Functions
 def insert_name(default_name, list):
 
     ans = input("Enter name of " + default_name + ": ")
