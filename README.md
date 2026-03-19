@@ -1,6 +1,8 @@
 # fighting-game-rotation
 ###Fighting Game Rotation Visualizer
 
+Just run the python script!
+
 **Features:**
 
   Rotates Among 3 to 8 players
