@@ -1,7 +1,7 @@
 """
 -------------------------------------------------------
 Code by PlantEnjoyer
-GitHub: https://github.com/PlantEnjoyr
+GitHub: https://github.com/PlantEnjoyr/fighting-game-rotation
 Email: abimrah1234@gmail.com
 -------------------------------------------------------
 Theory/Abstraction: https://plant-enjoyer.neocities.org/fighting-game-rotations
