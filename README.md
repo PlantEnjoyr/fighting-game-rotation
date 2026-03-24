@@ -9,9 +9,9 @@ Just run the python script!
 
   Input names/tags for player slots
 
-**In Development:**
-
   Adding/Dropping players mid rotation
+
+**In Development:**
 
   GUI instead of a script (Using Tkinter most likely)
 
