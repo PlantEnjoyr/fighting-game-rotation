@@ -290,7 +290,7 @@ def remove_player(r_number, i):
 i = int(0)
 print("\nRound " + str(i+1) + ": " + rotation[i] + "\n")
 while action != "q":
-    action = input("Enter nothing or n for next round, p for previous round, q to quit and anything else to display current round\n")
+    action = input("Enter:\n'n' or nothing for next round\n'p' for previous round\n'q' to quit\n'a' to add player \n'r' to remove player \nanything else to display round\n")
     if action == "n" or action == "":
         i = (i+1) % len(rotation)
         print("\nRound " + str(i+1) + ": " + rotation[i] + "\n")
