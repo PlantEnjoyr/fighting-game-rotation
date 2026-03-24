@@ -21,6 +21,7 @@ def remove_name(list, key):
             list.remove(key)
     return
 
+#Default Variables
 name = []
 rotation = ["no rotation selected :P"]
 action = ""
@@ -77,7 +78,7 @@ else:
     action = "q"
 
 
-#Another Function
+#Player Inserter
 def insert_player(r_number, i):
     
     if r_number == 3:
@@ -169,6 +170,7 @@ def insert_player(r_number, i):
 
     return rotation, i, r_number
 
+#Player Remover
 def remove_player(r_number, i):
 
     if r_number != 3:
