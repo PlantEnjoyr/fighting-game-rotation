@@ -13,6 +13,8 @@ Just run the python script!
 
 **In Development:**
 
+  Better rotation cycles
+
   GUI instead of a script (Using Tkinter most likely)
 
   Visual graph representation of rotation
