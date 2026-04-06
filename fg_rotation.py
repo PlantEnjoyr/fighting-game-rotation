@@ -53,7 +53,7 @@ elif r_number == "6":
     insert_name("P4", name)
     insert_name("P5", name)
     insert_name("P6", name)
-    rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[2], name[2] + " vs " + name[4], name[4] + " vs " + name[0], name[1] + " vs " + name[3], name[3] + " vs " + name[5], name[5] + " vs " + name[1], name[0] + " vs " + name[3], name[1] + " vs " + name[4], name[2] + " vs " + name[5]]
+    rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[2], name[1] + " vs " + name[3], name[2] + " vs " + name[4], name[3] + " vs " + name[5], name[4] + " vs " + name[0], name[5] + " vs " + name[1], name[0] + " vs " + name[3], name[1] + " vs " + name[4], name[2] + " vs " + name[5]]
 elif r_number == "7":
     insert_name("P1", name)
     insert_name("P2", name)
@@ -72,7 +72,7 @@ elif r_number == "8":
     insert_name("P6", name)
     insert_name("P7", name)
     insert_name("P8", name)        
-    rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[6], name[6] + " vs " + name[7], name[7] + " vs " + name[0], name[0] + " vs " + name[2], name[2] + " vs " + name[4], name[4] + " vs " + name[6], name[6] + " vs " + name[0], name[1] + " vs " + name[3], name[3] + " vs " + name[5], name[5] + " vs " + name[7], name[7] + " vs " + name[1], name[0] + " vs " + name[3], name[3] + " vs " + name[6], name[6] + " vs " + name[1], name[1] + " vs " + name[4], name[4] + " vs " + name[7], name[7] + " vs " + name[2], name[2] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[4], name[1] + " vs " + name[5], name[2] + " vs " + name[6], name[3] + " vs " + name[7]]
+    rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[6], name[6] + " vs " + name[7], name[7] + " vs " + name[0], name[0] + " vs " + name[2], name[1] + " vs " + name[3], name[2] + " vs " + name[4], name[3] + " vs " + name[5], name[4] + " vs " + name[6], name[5] + " vs " + name[7], name[6] + " vs " + name[0], name[7] + " vs " + name[1], name[0] + " vs " + name[3], name[3] + " vs " + name[6], name[6] + " vs " + name[1], name[1] + " vs " + name[4], name[4] + " vs " + name[7], name[7] + " vs " + name[2], name[2] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[4], name[1] + " vs " + name[5], name[2] + " vs " + name[6], name[3] + " vs " + name[7]]
 else:
     print("erm no :3c")
     action = "q"
@@ -105,7 +105,7 @@ def insert_player(r_number, i):
 
     elif r_number == 5:
         insert_name("P6", name)
-        rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[2], name[2] + " vs " + name[4], name[4] + " vs " + name[0], name[1] + " vs " + name[3], name[3] + " vs " + name[5], name[5] + " vs " + name[1], name[0] + " vs " + name[3], name[1] + " vs " + name[4], name[2] + " vs " + name[5]]
+        rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[2], name[1] + " vs " + name[3], name[2] + " vs " + name[4], name[3] + " vs " + name[5], name[4] + " vs " + name[0], name[5] + " vs " + name[1], name[0] + " vs " + name[3], name[1] + " vs " + name[4], name[2] + " vs " + name[5]]
     
         if i == 4:
             i = 8
@@ -124,24 +124,29 @@ def insert_player(r_number, i):
     
         if i == 5:
             i = 13
-        elif i == 6 or i == 7:
-            i += 1
-        elif i == 8:
+        elif i == 6:
+            i = 7
+        elif i == 7:
+            i = 11
+        elif i == 9:
+            i = 12
+        elif i == 10:
             i = 20
-        elif i == 9 or i == 10 or i == 12:
-            i += 2
         elif i == 11:
             i = 18
+        elif i == 12:
+            i = 14
         elif i == 13:
             i = 19
         elif i == 14:
             i = 17
 
+
         r_number = "7"
 
     elif r_number == 7:
         insert_name("P8", name)
-        rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[6], name[6] + " vs " + name[7], name[7] + " vs " + name[0], name[0] + " vs " + name[2], name[2] + " vs " + name[4], name[4] + " vs " + name[6], name[6] + " vs " + name[0], name[1] + " vs " + name[3], name[3] + " vs " + name[5], name[5] + " vs " + name[7], name[7] + " vs " + name[1], name[0] + " vs " + name[3], name[3] + " vs " + name[6], name[6] + " vs " + name[1], name[1] + " vs " + name[4], name[4] + " vs " + name[7], name[7] + " vs " + name[2], name[2] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[4], name[1] + " vs " + name[5], name[2] + " vs " + name[6], name[3] + " vs " + name[7]]
+        rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[6], name[6] + " vs " + name[7], name[7] + " vs " + name[0], name[0] + " vs " + name[2], name[1] + " vs " + name[3], name[2] + " vs " + name[4], name[3] + " vs " + name[5], name[4] + " vs " + name[6], name[5] + " vs " + name[7], name[6] + " vs " + name[0], name[7] + " vs " + name[1], name[0] + " vs " + name[3], name[3] + " vs " + name[6], name[6] + " vs " + name[1], name[1] + " vs " + name[4], name[4] + " vs " + name[7], name[7] + " vs " + name[2], name[2] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[4], name[1] + " vs " + name[5], name[2] + " vs " + name[6], name[3] + " vs " + name[7]]
     
         if i == 6:
             i = 11
@@ -165,7 +170,7 @@ def insert_player(r_number, i):
         r_number = "8"
     
     elif r_number == 8:
-        rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[6], name[6] + " vs " + name[7], name[7] + " vs " + name[0], name[0] + " vs " + name[2], name[2] + " vs " + name[4], name[4] + " vs " + name[6], name[6] + " vs " + name[0], name[1] + " vs " + name[3], name[3] + " vs " + name[5], name[5] + " vs " + name[7], name[7] + " vs " + name[1], name[0] + " vs " + name[3], name[3] + " vs " + name[6], name[6] + " vs " + name[1], name[1] + " vs " + name[4], name[4] + " vs " + name[7], name[7] + " vs " + name[2], name[2] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[4], name[1] + " vs " + name[5], name[2] + " vs " + name[6], name[3] + " vs " + name[7]]
+        rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[6], name[6] + " vs " + name[7], name[7] + " vs " + name[0], name[0] + " vs " + name[2], name[1] + " vs " + name[3], name[2] + " vs " + name[4], name[3] + " vs " + name[5], name[4] + " vs " + name[6], name[5] + " vs " + name[7], name[6] + " vs " + name[0], name[7] + " vs " + name[1], name[0] + " vs " + name[3], name[3] + " vs " + name[6], name[6] + " vs " + name[1], name[1] + " vs " + name[4], name[4] + " vs " + name[7], name[7] + " vs " + name[2], name[2] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[4], name[1] + " vs " + name[5], name[2] + " vs " + name[6], name[3] + " vs " + name[7]]
         print("Cannot add more players!!")
 
     return rotation, i, r_number
@@ -211,12 +216,12 @@ def remove_player(r_number, i):
         if i == 4 or i == 5 or i == 6:
             i = 5
         elif i == 7:
-            i = 6
-        elif i == 8:
-            i = 4
-        elif i == 9:
             i = 8
-        elif i == 10 or i == 11 or i == 12:
+        elif i == 8:
+            i = 6
+        elif i == 9 or i == 10:
+            i = 4
+        elif i == 11 or i == 12:
             i = 9
         elif i == 13:
             i = 7
@@ -225,7 +230,7 @@ def remove_player(r_number, i):
         
     elif r_number == 7:
         remove_name(name, rm_name)
-        rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[2], name[2] + " vs " + name[4], name[4] + " vs " + name[0], name[1] + " vs " + name[3], name[3] + " vs " + name[5], name[5] + " vs " + name[1], name[0] + " vs " + name[3], name[1] + " vs " + name[4], name[2] + " vs " + name[5]]
+        rotation = [name[0] + " vs " + name[1], name[1] + " vs " + name[2], name[2] + " vs " + name[3], name[3] + " vs " + name[4], name[4] + " vs " + name[5], name[5] + " vs " + name[0], name[0] + " vs " + name[2], name[1] + " vs " + name[3], name[2] + " vs " + name[4], name[3] + " vs " + name[5], name[4] + " vs " + name[0], name[5] + " vs " + name[1], name[0] + " vs " + name[3], name[1] + " vs " + name[4], name[2] + " vs " + name[5]]
         r_number = "6"
 
         if i == 5 or i == 6 or i == 7:
@@ -257,15 +262,15 @@ def remove_player(r_number, i):
         if i == 6 or i == 8:
             i = 7
         elif i == 9:
-            i = 8
-        elif i == 10:
-            i = 9
-        elif i == 11:
-            i = 6
-        elif i == 12:
             i = 11
-        elif i == 13:
+        elif i == 10:
+            i = 8
+        elif i == 11:
             i = 12
+        elif i == 12:
+            i = 9
+        elif i == 13 or i == 14:
+            i = 6
         elif i == 15 or i == 16:
             i = 14
         elif i == 17:
